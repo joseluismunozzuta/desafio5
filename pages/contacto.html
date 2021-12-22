@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel La Hacienda</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!--Aqui linkeamos la hoja CSS-->
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <div class="contenedorGridContacto">
+        <header class="filamenu">
+            <!--Logo del hotel-->
+            <div>
+                <a href="../index.html"><img id="logohotel" class="" src="../assets/img/logo.png" alt=""></a>
+            </div>
+            <!--Nav bar-->
+            <div class="menunav">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./rooms.html">Habitaciones</a></li>
+                        <li><a href="./galeria.html">Galeria</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="h1Contacto">
+            <h1 >Contactanos!</h1>
+        </div>
+        <div class="formularioContacto">
+            <form action="#" class="formcontacto">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="name" placeholder="Nombres">
+                    </div>
+                    <div>
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" placeholder="Apellidos">
+                        <hr>
+                    </div>
+                    <div>
+                        <label for="fecha">Ingresa tu fecha de nacimiento</label>
+                        <input type="date" name="fecha">
+                    </div>
+                    <div>
+                        <label for="email">Ingresa tu email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="pais">Elige tu pais de residencia</label>
+                        <select name="pais" id="">
+                            <option value="argentina">Argentina</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="Peru" selected>Peru</option>
+                        </select>
+                        <hr>
+                    </div>
+                    <div>
+                        <label for="promociones">Desea recibir newsletter?</label>
+                        <input type="checkbox">
+                        <hr>
+                    </div>
+                    <div>
+                        <label for="comentarios">Descripcion de consulta</label><br>
+                        <textarea type="text" name="comentarios"></textarea>
+                    </div>
+                    <br>
+                    <button><a>Limpiar formulario</a></button>
+                    <button><a>Enviar</a></button>
+                </fieldset>
+            </form>
+        </div>
+        <footer>
+            <a href="./contacto.html">Contactanos</a>
+        </footer>
+    </div>
+</body>
+</html>
