@@ -8,6 +8,17 @@ body{
 }
 h1{
     text-align: center;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .area-header{
     padding: 15px;
@@ -129,6 +140,8 @@ fieldset{
 .textoInformativo{
     grid-area: textoInformativo;
     font-size: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 .textoGaleria{
     grid-area: textoGaleria;
@@ -140,9 +153,32 @@ fieldset{
     display: flex;
     flex-direction: column;
 }
+.portada h1{
+    font-size: 3.5rem;
+    color: purple;
+}
 .tiposHab{
     grid-area: tiposHab;
     font-size: 20px;   
+}
+.tiposHabi{
+    grid-area: tiposHab;
+    font-size: 20px;   
+}
+.textoIndex:hover{
+    font-size: 30px;
+    padding: 5px;
+    transform:translate(100px,20px);
+    animation-duration: 2s;
+    animation-name: aparecer;
+    background-image: linear-gradient(to right, white ,lightseagreen);
+}
+.tiposHabi:hover{
+    font-size: 30px;
+    padding: 30px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    background-image: linear-gradient(to right, greenyellow ,lightseagreen);
 }
 .contflex{
     display: flex;
@@ -180,6 +216,7 @@ table, th, td {
 .itemImg{
     margin: 10px;
     text-align: center;
+    
 }
 .item{
     opacity: .8;
@@ -188,6 +225,8 @@ table, th, td {
     zoom: 1.1;
     opacity: 1;
     border: solid black 2px;
+    animation-duration: 1s;
+    animation-name: aparecer;
 }
 .logo{
     margin-left: 15px;
@@ -207,8 +246,13 @@ table, th, td {
     width: 90%;
     float: none;
     border: black solid 5px;
+    animation-duration: 2s;
+    animation-name: aparecer;
 }
-
+#imagenportada:hover{
+    width: 95%;
+    border: white solid 10px;
+}
 /* medias queries */
 /*vista desktop */
 @media only screen and (min-width:1240px){
@@ -242,12 +286,17 @@ table, th, td {
     }
     
     .tiposHab{
-        border: solid black 2px;
+        border: solid blue 2px;
         padding: 10px 10px 10px 40px;
         width: 80%;
         margin: 5px;
         align-items: center;
         align-content: center;
+    }
+
+    .tiposHab h3{
+        font-size:4rem;
+        color: blue;
     }
 
     #imagenportada{
